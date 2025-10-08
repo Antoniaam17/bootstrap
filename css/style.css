@@ -1,0 +1,188 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --color-primario: #a12525;
+  --color-secundario: #f7b731;
+  --color-fondo: #fff8f2;
+  --color-texto: #333;
+  --color-gris: #6c757d;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  margin: 0;
+  padding-top: 56px; 
+}
+
+
+.navbar {
+  background: linear-gradient(90deg, var(--color-primario), #6a0f0f);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.navbar .nav-link {
+  color: #f1f1f1 !important;
+  transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: var(--color-secundario) !important;
+  transform: translateY(-2px);
+}
+
+
+.navbar .form-control {
+  border-radius: 30px;
+  border: none;
+}
+
+.navbar .btn-outline-success {
+  color: #fff;
+  border-color: var(--color-secundario);
+  border-radius: 30px;
+}
+
+.navbar .btn-outline-success:hover {
+  background-color: var(--color-secundario);
+  color: #000;
+}
+
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+  filter: brightness(0.85);
+}
+
+.carousel-caption h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-caption p {
+  font-size: 1.1rem;
+  color: #f1f1f1;
+}
+
+
+.marketing {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.marketing .col-lg-4 {
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+  padding: 2rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.marketing .col-lg-4:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.marketing img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.marketing h2 {
+  color: var(--color-primario);
+  font-weight: 600;
+}
+
+.marketing .btn {
+  border-radius: 30px;
+  background-color: var(--color-secundario);
+  color: #000;
+  border: none;
+}
+
+.marketing .btn:hover {
+  background-color: #ffcf4d;
+  transform: scale(1.05);
+}
+
+/* ✨ FEATURETTES (SECCIONES GRANDES) */
+.featurette-divider {
+  margin: 5rem 0;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.featurette h2 {
+  color: var(--color-primario);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.featurette p.lead {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-gris);
+}
+
+.featurette img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+}
+
+.featurette img:hover {
+  transform: scale(1.05);
+}
+
+
+footer {
+  background-color: #2c2c2c;
+  color: #ccc;
+  padding: 2rem 0;
+  border-top: 3px solid var(--color-primario);
+  text-align: center;
+  margin-top: 4rem;
+}
+
+footer a {
+  color: var(--color-secundario);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer .float-end a {
+  font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 300px;
+  }
+
+  .featurette-heading {
+    font-size: 1.6rem;
+  }
+
+  .marketing .col-lg-4 {
+    margin-bottom: 2rem;
+  }
+}
